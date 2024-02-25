@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<AssemblyName>InquestSpider.Resource.Core</AssemblyName>
+		<RootNamespace>InquestSpider.Resource.Core</RootNamespace>
+		<Authors>Greg Vondra</Authors>
+		<Company />
+		<Product>Inquest Spider</Product>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+		<Optimize>False</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Autofac" Version="8.0.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\CommonCore\CommonCore.csproj" />
+	  <ProjectReference Include="..\Resource.Data\Resource.Data.csproj" />
+	  <ProjectReference Include="..\Resource.Framework\Resource.Framework.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<AssemblyName>InquestSpider.CommonCore</AssemblyName>
+		<RootNamespace>InquestSpider.CommonCore</RootNamespace>
+		<Authors>Greg Vondra</Authors>
+		<Company />
+		<Product>Inquest Spider</Product>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+		<Optimize>False</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="BrassLoon.DataClient.MongoDB" Version="1.0.0-prerelease.*" />
+	</ItemGroup>
+
+</Project>
