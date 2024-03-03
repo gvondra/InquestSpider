@@ -3,18 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resource.Data", "Resource.Data\Resource.Data.csproj", "{E0F86E08-0515-4117-A942-4D3B92EF9D37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resource.Data", "Resource.Data\Resource.Data.csproj", "{E0F86E08-0515-4117-A942-4D3B92EF9D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resource.Framework", "Resource.Framework\Resource.Framework.csproj", "{1E0F6CE6-0D0F-4716-B950-E1DA930AE517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resource.Framework", "Resource.Framework\Resource.Framework.csproj", "{1E0F6CE6-0D0F-4716-B950-E1DA930AE517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resource.Core", "Resource.Core\Resource.Core.csproj", "{2952208C-99C6-4629-8D48-E1905FE231BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resource.Core", "Resource.Core\Resource.Core.csproj", "{2952208C-99C6-4629-8D48-E1905FE231BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonCore", "..\Common\CommonCore\CommonCore.csproj", "{4DCBADF1-9BB6-4660-9CA5-6B2ADE48B8FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonCore", "..\Common\CommonCore\CommonCore.csproj", "{4DCBADF1-9BB6-4660-9CA5-6B2ADE48B8FA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F8FADDF-E407-475A-B0A0-53D0EA9AEE21}"
 	ProjectSection(SolutionItems) = preProject
 		..\.editorconfig = ..\.editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceRPC", "ResourceRPC\ResourceRPC.csproj", "{751B66AA-A079-48AF-87C1-E5799399AC51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface.Resource", "Interface.Resource\Interface.Resource.csproj", "{C0734CC0-210A-40B8-8166-272C37EFA4ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{4DCBADF1-9BB6-4660-9CA5-6B2ADE48B8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DCBADF1-9BB6-4660-9CA5-6B2ADE48B8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCBADF1-9BB6-4660-9CA5-6B2ADE48B8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{751B66AA-A079-48AF-87C1-E5799399AC51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751B66AA-A079-48AF-87C1-E5799399AC51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751B66AA-A079-48AF-87C1-E5799399AC51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751B66AA-A079-48AF-87C1-E5799399AC51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0734CC0-210A-40B8-8166-272C37EFA4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0734CC0-210A-40B8-8166-272C37EFA4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0734CC0-210A-40B8-8166-272C37EFA4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0734CC0-210A-40B8-8166-272C37EFA4ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
