@@ -47,7 +47,7 @@ namespace ResourceRPC.Services
         }
 
         [Authorize(Constants.POLICY_RESOURCE_READ)]
-        public override async Task<Resource> GetByUrl(GetByUrlRequest request, ServerCallContext context)
+        public override async Task<Resource> GetByUrl(GetResourceByUrlRequest request, ServerCallContext context)
         {
             try
             {

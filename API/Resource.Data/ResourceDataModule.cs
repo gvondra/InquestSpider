@@ -13,6 +13,7 @@ namespace InquestSpider.Resource.Data
                 .SingleInstance()
                 .As<IDbProvider>();
             builder.RegisterType<ResourceDataService>().As<IResourceDataService>();
+            builder.RegisterType<ResourceExclusionDataService>().As<IResourceExclusionDataService>();
         }
     }
 }

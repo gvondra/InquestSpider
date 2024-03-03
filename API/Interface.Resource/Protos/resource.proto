@@ -7,7 +7,7 @@ option csharp_namespace = "InquestSpider.Interface.Resource.Protos";
 
 service ResourceService {
 	rpc GetAll(google.protobuf.Empty) returns (stream Resource);
-	rpc GetByUrl(GetByUrlRequest) returns (Resource);
+	rpc GetByUrl(GetResourceByUrlRequest) returns (Resource);
 	rpc Save(Resource) returns (Resource);
 }
 
@@ -20,6 +20,6 @@ message Resource {
     google.protobuf.Timestamp UpdateTimestamp = 6;
 }
 
-message GetByUrlRequest {
+message GetResourceByUrlRequest {
 	string Url = 1;
 }

@@ -60,6 +60,7 @@ namespace ResourceRPC
             _ = app.UseAuthentication();
             _ = app.UseAuthorization();
 
+            _ = app.MapGrpcService<ResourceExclusionService>();
             _ = app.MapGrpcService<ResourceService>();
 
             app.Run();

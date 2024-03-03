@@ -36,4 +36,8 @@
 	  <ProjectReference Include="..\Resource.Framework\Resource.Framework.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Properties\" />
+	</ItemGroup>
+
 </Project>

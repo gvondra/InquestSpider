@@ -11,8 +11,8 @@
 		<Product>Inquest Spider</Product>
 		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.0-prerelease.1</Version>
-		<AssemblyVersion>1.0.0.1</AssemblyVersion>
+		<Version>1.0.0-prerelease.2</Version>
+		<AssemblyVersion>1.0.0.2</AssemblyVersion>
 		<PackageReleaseNotes></PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -28,6 +28,7 @@
 
 	<ItemGroup>
 	  <None Remove="Protos\resource.proto" />
+	  <None Remove="Protos\resource_exclusion.proto" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -42,6 +43,7 @@
 
 	<ItemGroup>
 	  <Protobuf Include="Protos\resource.proto" />
+	  <Protobuf Include="Protos\resource_exclusion.proto" />
 	</ItemGroup>
 
 </Project>

@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "InquestSpider.Interface.Resource.Protos";
+
+service ResourceExclusionService {
+	rpc GetAll(google.protobuf.Empty) returns (GetAllResourceExclusionResponse);
+	rpc Save(SaveResourceExclusionRequest) returns (google.protobuf.Empty);
+}
+
+message GetAllResourceExclusionResponse {
+	repeated string Expressions = 1;
+}
+
+message SaveResourceExclusionRequest {
+	repeated string Expressions = 1;
+}

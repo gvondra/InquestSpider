@@ -7,6 +7,7 @@ namespace InquestSpider.Interface.Resource
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
+            builder.RegisterType<ResourceExclusionService>().As<IResourceExclusionService>();
             builder.RegisterType<ResourceService>().As<IResourceService>();
         }
     }

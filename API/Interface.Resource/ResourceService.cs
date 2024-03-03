@@ -25,7 +25,7 @@ namespace InquestSpider.Interface.Resource
         {
             if (string.IsNullOrEmpty(url))
                 throw new ArgumentNullException(nameof(url));
-            Protos.GetByUrlRequest request = new Protos.GetByUrlRequest
+            Protos.GetResourceByUrlRequest request = new Protos.GetResourceByUrlRequest
             {
                 Url = url
             };
