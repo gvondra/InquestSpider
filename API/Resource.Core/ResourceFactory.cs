@@ -31,10 +31,11 @@ namespace InquestSpider.Resource.Core
             });
         }
 
-        public async Task<IEnumerable<IResource>> GetAll(ISettings settings)
+        public Task<IAsyncEnumerable<IResource>> GetAll(ISettings settings)
         {
-            return (await _dataService.GetAll(new DataSettings(settings)))
-                .Select<ResourceData, IResource>(Create);
+            return Task.FromResult<IAsyncEnumerable<IResource>>(new AsyncDataEnumerable<ResourceData, IResource>(
+                () => _dataService.GetAll(new DataSettings(settings)),
+                Create));
         }
 
         public async Task<IResource> GetByUrl(ISettings settings, string url)
