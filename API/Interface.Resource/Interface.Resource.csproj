@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<AssemblyName>InquestSpider.Interface.Resource</AssemblyName>
+		<RootNamespace>InquestSpider.Interface.Resource</RootNamespace>
+		<Authors>Greg Vondra</Authors>
+		<Company />
+		<Product>Inquest Spider</Product>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.0-prerelease.1</Version>
+		<AssemblyVersion>1.0.0.1</AssemblyVersion>
+		<PackageReleaseNotes></PackageReleaseNotes>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Protos\resource.proto" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="8.0.*" />
+		<PackageReference Include="Google.Protobuf" Version="[3.25.3,4.0)" />
+		<PackageReference Include="Grpc.Net.Client" Version="[2.61.0,3.0)" />
+		<PackageReference Include="Grpc.Tools" Version="2.62.*">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Protobuf Include="Protos\resource.proto" />
+	</ItemGroup>
+
+</Project>

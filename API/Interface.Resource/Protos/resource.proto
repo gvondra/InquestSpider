@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "InquestSpider.Interface.Resource.Protos";
+
+service ResourceService {
+	rpc GetAll(google.protobuf.Empty) returns (stream Resource);
+	rpc GetByUrl(GetByUrlRequest) returns (Resource);
+	rpc Save(Resource) returns (Resource);
+}
+
+message Resource {
+	string ResourceId = 1;
+	string Url = 2;
+	string Status = 3;
+	map<string, string> Headers = 4;
+	google.protobuf.Timestamp CreateTimestamp = 5;
+    google.protobuf.Timestamp UpdateTimestamp = 6;
+}
+
+message GetByUrlRequest {
+	string Url = 1;
+}
